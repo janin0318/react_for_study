@@ -4,6 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ForList from "./chap03/ForList";
 import books from "./chap03/books";
+import ForFilter from "./chap03/ForFilter";
+import ForSort from "./chap03/ForSort";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +15,9 @@ root.render(
       {/*<MyHello myName="Taro"/>*/}
       {/*<EventBasic type={'time'}/>*/}
       {/*<StateBasic init={0}/>*/}
-      <ForList src={books}/>
+      {/*<ForList src={books}/>*/}
+      {/*<ForFilter books={books}/>*/}
+      <ForSort books={books}/>
     </React.StrictMode>
 );
 
