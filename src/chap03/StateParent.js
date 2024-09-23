@@ -1,8 +1,8 @@
-import React from "react";
+import {useState} from "react";
 import StateCounter from "./StateCounter";
 
 export default function StateParent() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
   const update = step => setCount(c => c + step);
   return (
       <>

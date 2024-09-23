@@ -15,6 +15,11 @@ import TitledPanel from "./chap03/TitledPanel";
 import ListTemplate from "./chap03/ListTemplate";
 import Download from "./chap03/Download";
 import StateParent from "./chap03/StateParent";
+import EventMouse from "./chap03/Chap3_4/EventMouse";
+import EventCompare from "./chap03/Chap3_4/EventCompaare";
+import EventError from "./chap03/Chap3_4/EventError";
+import EventObj from "./chap03/Chap3_4/EventObj";
+import EventArgs from "./chap03/Chap3_4/EventArgs";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -53,6 +58,16 @@ root.render(
         )}
       </ListTemplate>
       <StateParent/>
+      <p/>
+      <EventMouse
+          alt="ロゴ画像"
+          beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif"
+          afterSrc="https://www.web-deli.com/image/home_chara.gif"/>
+      <EventCompare/>
+      <EventError src="./image/dl.png" alt="test"/>
+      <EventError src="./image/dummy.png" alt="test"/>
+      <EventObj/>
+      <EventArgs/>
     </React.StrictMode>
 );
 
